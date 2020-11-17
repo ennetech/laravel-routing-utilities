@@ -1,0 +1,19 @@
+{
+    "name": "ennetech/laravel-routing-utilities",
+    "description": "This package allows you to work faster and better with laravel routes",
+    "require": {
+      "php": ">=7.2.0"
+    },
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "enne",
+        "email": "n@enne.tech"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Ennetech\\": "src"
+      }
+    }
+  }
