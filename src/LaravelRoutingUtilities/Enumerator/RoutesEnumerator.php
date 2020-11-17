@@ -65,7 +65,7 @@ class RoutesEnumerator
                         try {
                             $tmp = new $className;
                         } catch (\Throwable $e) {
-
+                            $tmp = null;
                         }
                         if ($tmp instanceof \Illuminate\Foundation\Http\FormRequest) {
                             try {
