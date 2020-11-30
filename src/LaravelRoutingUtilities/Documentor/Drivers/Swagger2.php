@@ -96,11 +96,12 @@ class Swagger2 extends BaseDriver
 
                 } else {
                     // TODO: add support for nested array validation
-                    if (is_array($p)) {
-                        $p = "";
-                    }
                     // Esplodo i campi di validazione
-                    $explode = explode('|', $p);
+                    if (is_array($p)) {
+                        $explode = $p;
+                    } else {
+                        $explode = explode('|', $p);
+                    }
 
                     $rule = null;
 
